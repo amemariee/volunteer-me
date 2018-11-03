@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Volunteer Me</title>
         
         <style>
         body {
@@ -9,7 +10,7 @@
 
 
         .row {
-              width: 80%;
+              width: 30%;
               margin: 0 auto;
               display: block;
               height: 180px;
@@ -31,12 +32,72 @@
         }
         
                  
-            
+            h1 {
+                    position: relative;
+                 margin-bottom: 45px;
+                 font-family: 'Oswald', sans-serif;
+                 font-size: 44px;
+                 text-transform: uppercase;
+                 color: #424242;
+                 
+        }
+
+                .gallery-wrap {
+                 display: flex;
+                 flex-direction: row;
+                 width: 100%;
+                 height: 70vh;
+                }
+
+                .item {
+                 flex: 1;
+                 height: 100%;
+                 background-position: center;
+                 background-size: cover;
+                 background-repeat: none;
+                 transition: flex 0.8s ease;
+                }
+                .item:hover {
+                 flex: 7;
+                }
+                
+                .item-1 {
+                 background-image: url("https://www.takenoticemedia.com/wp-content/uploads/2018/08/rooftops-1258857_1920.jpg");
+                }
+                
+                .item-2 {
+                 background-image: url("https://www.takenoticemedia.com/wp-content/uploads/2018/08/riga-2935039_1920.jpg");
+                }
+                
+                .item-3 {
+                 background-image: url("https://www.takenoticemedia.com/wp-content/uploads/2018/08/black-and-white-1853980_1920.jpg");
+                }
+                
+                .item-4 {
+                 background-image: url("https://www.takenoticemedia.com/wp-content/uploads/2018/08/fort-lauderdale-1975405_1920.jpg");
+                }
+                
+                .item-5 {
+                 background-image: url("https://www.takenoticemedia.com/wp-content/uploads/2018/07/drone-1462463_1920.jpg");
+                }
+
             
         </style>
     </head>
     
     <body>
+        
+        
+
+        
+        <div class="gallery-wrap">
+         <div class="item item-1"></div>
+         <div class="item item-2"></div>
+         <div class="item item-3"></div>
+         <div class="item item-4"></div>
+         <div class="item item-5"></div>
+        </div>
+
   <div class="row">
         <h1><br>3 Quetions to narrow down opitons</br></h1>
         <h2><br></br></h2>
