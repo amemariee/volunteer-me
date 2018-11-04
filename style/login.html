@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Log In Form</title>
+      <h2 class = "volunteer">VolunteerMe<h2>
+      
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+          
+        <div class="container">
+        
+            <form id="login">
+              
+        
+            <h1> Log In </h1>    
+            <p>Username :</p>
+            <input id="user" type="email" placeholder="Username" name="text" class="mail">
+              
+            <p>Password :</p>
+            <input id="password" type="Password" placeholder="Password" name="text" class="pass"> <br/>   
+                
+            <input type="submit" value="Log in"  <br>
+            <br/>
+             
+ 
+            </form>
+            
+            <hr>
+            
+            <form id="sign">
+                
+     
+                <h1>Sign Up </h1>    
+                <p>Full Name :</p>
+                <input id="user" type="text" placeholder="Full-Name" name="text" class="fullname"> <br/>
+              
+         
+                 <p>Username :</p>
+                 <input type="email" placeholder="Username" name="text" class="mail">
+                <br/>
+       
+                <p>Password :</p>
+            <input type="Password" placeholder="Password" name="text" class="pass"> <br/>
+               <br/>
+                
+                
+                <input type="submit" value="Sign Up"><br/>
+                <br/>
+                
+            </form>
+        </div>
+        <script src="jvs.js"></script>
+            
+                
+        
+    </body>
+    
+    <style>
+        
+         @import url('https://fonts.googleapis.com/css?family=Raleway');
+ *{
+     font-family:Raleway ,sans-serif;
+     -webkit-box-sizing:border-box;
+             box-sizing:border-box;
+     }
+
+body {
+    
+     background:linear-gradient(180deg, skyblue 15%, orange 95%);
+}
+
+.container{
+     width:725px;
+     margin:auto;
+     background:white;
+     display: flex;
+     -webkit-box-shadow:0px         10px 100px;
+
+}
+
+.container h1 {
+    color: orange;
+    font-size:60px;
+    position: relative;
+     top: -8px;
+     left: 40px;
+      text-shadow: 3px 2px 1px #000000;
+    
+}
+
+
+input{
+    
+    display: inline-block;
+    width: 300px;
+    margin: 1px 2px 35px 20px;
+    padding: 12px;
+    font-size:15px;
+    border: orange solid 1px;
+    transition: all 0.5s;
+}
+ 
+.container p {
+    margin-left: 25px;
+    font-size:22px;
+ 
+}
+    
+input[type="submit"]{
+    width: 300px;
+    height: 57px;
+    background: orange;
+    font-weight: bold;
+    font-size:25px;
+    padding-right:25px;
+    background-color:orange;
+    color:white;
+    cursor:pointer;
+  
+    
+}
+
+
+#sign {
+    
+  margin-left:50px;
+  
+}
+
+ hr{
+     height:400px;
+     position:absolute;
+     left:50%;
+     top:300px ;
+}
+
+#sign input {
+    margin-bottom:0px;
+   
+}
+
+.volunteer{
+  font-size: 100px;
+  text-align: center;
+  color: Orange;
+  margin: auto;
+  text-shadow: 3px 6px 10px #000000;
+  font-family: Raleway ,sans-serif;;
+}
+
+
+    </style>

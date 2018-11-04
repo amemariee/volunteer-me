@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Volunteer Me</title>
+        
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<header class="site-header cf">
+  <div class="container">
+    <div class="site-logo"><h1 >VolunteerMe</h1></div>
+    <nav class="site-nav">
+      <ul id="std-menu">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact</a></a>
+    </nav>
+  </div> <!-- /container -->
+</header>
+ <ul id="responsive-menu">
+  <li><a class="active" href="">Home</a></li>
+  <li><a href="">About</a></li>
+  <li><a href="">Products</a></li>
+  <li><a href="">Contact</a></li>
+</ul>
+
+<div class="welcome-message">
+  <div class="container">
+  <h1>Help us, Help you, Help others.</h1>
+  <h2>Join VolunteerMe to help those around the world.</h2>
+  </div>
+</div> 
+
+
+</div><!--\Container-->
+<style>
+    
+   /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  background-color: snow;
+}
+a {
+  color: red500;
+  text-decoration: none;
+}
+a:hover {
+  color: #b71c1c;
+}
+.container {
+  position: relative;
+  max-width: 1500px;
+  margin-right: 30 auto;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 10%;
+  }
+}
+.container strong {
+  background: yellow;
+}
+.welcome-message {
+  position: relative;
+  padding: 100px 30px 45px 30px;
+  min-height: 500px;
+  border: solid orange 5px;
+  background-image: url("https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/c/3d/c3d693df-4795-587b-9a4f-c500cf27c861/57407830cbf8f.image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 0 32px;
+}
+@media only screen and (max-width: 600px) {
+}
+.welcome-message:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(4, 4, 4, .3);
+}
+.welcome-message h1 {
+  font-size: 66px;
+  margin: 20px 0 50px;
+  color: #fff;
+}
+.welcome-message h2 {
+  font-size: 32px;
+  color: #f0f0f0;
+  margin: 0;
+}
+.site-header {
+  position: relative;
+  padding: 15px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .site-header {
+    padding: 15px 0;
+  }
+}
+.site-header .site-logo, .site-header .site-nav {
+  float: left;
+  width: 50%;
+}
+.site-header .site-nav {
+  margin: 20px 0 0;
+  text-align: right;
+}
+.site-header .site-nav li {
+  display: inline-block;
+  margin: 0 6px 0;
+}
+.site-header .site-nav a {
+  font-size: 2.2em;
+  display: block;
+  padding: 0px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 200;
+  transition: color 0.2s ease;
+  border: solid;
+  transition: color 0.5s ease-in-out;
+}
+.site-header .site-nav a:hover {
+  color: orange;
+}
+.site-header .site-nav a.active {
+  color: orange;
+}
+.site-header .site-logo {
+  text-align: left;
+  font-weight: 700;
+  margin: 0;
+}
+.site-header .site-logo h1 {
+  margin: 0;
+  font-size: 70px;
+  color: Orange;
+  text-shadow: 3px 6px 10px #000;
+  font-family: Raleway, sans-serif;
+}
+.site-nav ul, .sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#responsive-menu {
+  display: none;
+  margin: 0;
+  padding: 20px 15px;
+  position: absolute;
+  z-index: 100;
+  top: 73px;
+  left: 0;
+  width: 100%;
+  background: black;
+}
+@media only screen and (min-width: 600px) {
+  #responsive-menu {
+    display: none !important;
+  }
+}
+#responsive-menu li {
+  display: block;
+}
+#responsive-menu a {
+  display: block;
+  color: crimson;
+  border: none;
+  margin: 20px 0;
+  font-size: 1.5em;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: color 0.2s ease-in;
+}
+#responsive-menu a:hover, #responsive-menu a.active {
+  color: blue;
+}
+#std-menu {
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  #std-menu {
+    display: none;
+  }
+}
+#menu-trigger {
+  display: none;
+  transition: none;
+  border: 0;
+}
+#menu-trigger .fa {
+  color: #222;
+  transition: color 0.2s ease-in-out;
+}
+#menu-trigger .fa:hover {
+  color: crimson;
+}
+@media only screen and (min-width: 600px) {
+  #menu-trigger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #menu-trigger {
+    display: block;
+  }
+}
+
+</style>
