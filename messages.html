@@ -5,112 +5,136 @@
         
         <style>
 
-                    .button {
-          display: inline-block;
-          border-radius: 4px;
-          background-color: #f4511e;
-          border: none;
-          color: #FFFFFF;
-          text-align: center;
-          font-size: 28px;
-          padding: 20px;
-          width: 200px;
-          transition: all 0.5s;
-          cursor: pointer;
-          margin: 5px;
-        }
-        
-        .button span {
-          cursor: pointer;
-          display: inline-block;
-          position: relative;
-          transition: 0.5s;
-        }
-        
-        .button span:after {
-          content: '\00bb';
-          position: absolute;
-          opacity: 0;
-          top: 0;
-          right: -20px;
-          transition: 0.5s;
-        }
-        
-        .button:hover span {
-          padding-right: 25px;
-        }
-        
-        .button:hover span:after {
-          opacity: 1;
-          right: 0;
-        }
+body{
+  background-color:darkorange;
+}
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top:15px;
+}
+p{
+  color:white;
+  text-align:justify;
+  margin-top:3px;
+  font-size:3.5rem;
+  font-weight:bold;
+  font-family:georgia;
+}
+.box1{
+  width:100%;
+  height:300px;
+  border:solid black 5px;
+  background:linear-gradient(rgba(255,0,0,.0),rgba(255,0,0,0)),url("http://apartmentsavailable.info/wp-content/uploads/parser/wood-furniture-designs-9.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.box2{
+  margin-top:3px;
+  width:100%;
+  height:330px;
+  border:solid black 5px;
+  background:linear-gradient(rgba(255,0,0,.0),rgba(255,0,0,.0)),url("http://bgfons.com/upload/wood_texture3851.jpg?");
+  background-size:cover;
+  background-position:center;
+}
+.box3{
+  margin-top:3px;
+  width:100%;
+  height:300px;
+  border:solid black 5px;
+ background: linear-gradient(rgba(255,0,0,.2),rgba(255,0,0,.1)),url("http://cherriescourt.info/wp-content/uploads/2018/02/wooden-strips-on-wall-wallpaper-wood-texture-wooden-strip-varnished-wood-texture-wallpaper-wall-mural-wooden-strip-varnished-wood-texture-wood-strips-wall.jpg");
+  background-size:cover;
+  background-position:center;
+}
+  
 
-        body {
-             background: darkorange;
-        }
-        
+h2{color:white;
+  text-align:center;
+  margin-top:3px;
+  font-size:3.5rem;
+  font-weight:bold;
+  font-family:georgia;
+ 
+}
+.dr{
+  color:white;
+  font-size:3.5rem;
+  margin:30px;
+  padding:0;
+  }
 
-
-        .row {
-              width: 30%;
-              margin: 0 auto;
-              display: block;
-              height: 180px;
-              clear: both
-              
+#button1{
+  background:white;
+  padding:.5rem;
+  border:solid red 1.4px;
+  border-radius:6px;
+}
+.button {
+  background-color: #E74C3C;
+  border: solid white 3px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+        }  
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
         }
-        
-        h1 {
-            position: relative;
-            margin-bottom: 45px;
-            font-family: 'Lucida Console', Monospace;
-            font-size: 34px;
-            text-transform: uppercase;
-            color: black;    
+button:hover span {
+  padding-right: 25px;
         }
-        
-        h2{
-            color: #2F4F4F;
-            font-size: 20px;
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
         }
-
-        .gallery-wrap {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 70vh;
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
         }
-
-        .item {
-            flex: 1;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: none;
-            transition: flex 0.8s ease;
+.item {
+   flex: 1;
+   height: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: none;
+   transition: flex 0.8s ease;
         }
-        .item:hover {
-            flex: 7;
+.item:hover {
+   flex: 7;
         }
-
-        .item-1 {
-         background-image: url("https://www.denverpost.com/wp-content/uploads/2016/05/20120602__20120603_A16_cd03haymanjumppic2p1.jpg?w=600");
+.item-1 {
+   background-image: url("https://www.denverpost.com/wp-content/uploads/2016/05/20120602__20120603_A16_cd03haymanjumppic2p1.jpg?w=600");
         }
-        
-        .item-2 {
-         background-image: url("https://cbsnews1.cbsistatic.com/hub/i/2018/09/16/170924cb-0f74-48bf-b805-8c9e1127461c/ap-18258610313107-2.jpg");
+.item-2 {
+   background-image: url("https://cbsnews1.cbsistatic.com/hub/i/2018/09/16/170924cb-0f74-48bf-b805-8c9e1127461c/ap-18258610313107-2.jpg");
         }
-        
-        .item-3 {
-         background-image: url("https://www.canadahelps.org/media/DSC_00831.jpg");
+.item-3 {
+   background-image: url("https://www.canadahelps.org/media/DSC_00831.jpg");
         }
-        
-        .item-4 {
-         background-image: url("http://www.habitat.org/sites/default/files/2016-10/disaster-volunteers-rebuild-nepal-earthquake_1.jpg");
+.item-4 {
+   background-image: url("http://www.habitat.org/sites/default/files/2016-10/disaster-volunteers-rebuild-nepal-earthquake_1.jpg");
         }
-        
-        .item-5 {
-         background-image: url("https://media.mnn.com/assets/images/2017/09/harvey_water_volunteers.jpg.653x0_q80_crop-smart.jpg");
+.item-5 {
+   background-image: url("https://media.mnn.com/assets/images/2017/09/harvey_water_volunteers.jpg.653x0_q80_crop-smart.jpg");
         }
         
 
@@ -122,9 +146,7 @@
     <body>
         
         
-
-        
-        <div class="gallery-wrap">
+  <div class="gallery-wrap">
          <div class="item item-1"></div>
          <div class="item item-2"></div>
          <div class="item item-3"></div>
@@ -133,45 +155,46 @@
         </div>
 
   <div class="row">
-
-
-       <center><h1><font size="6"><p style ="font-family:'Lucida Console'"><br>Want to make a volunteering impact?</br></h1></p></font>
-
-
-        <br><font size="6"> <p style="font-family:'Lucida Console'"><br>What skills do you have?</b></p> </font>
-
-        <break>
-            
-            <select>
+    <h2>Want To Make A Volunteering Impact?</h2>
+    <div class="box1"> 
+       <div style="position:relative; left:130px; top:70px;"><p>What Skills<br/>Do You Have?</p></div>
+       <tr>
+            <td>
+  <div class="options"style=" position:relative; top:-70px; left:690px;"><select>
               <option value="volvo">(Please choose one)</option>
-              <option value="volvo">CPR</option>
+              <option value="volvo">Communication</option>
               <option value="saab">Medical</option>
               <option value="opel">Construction</option>
-              <option value="audi"></option>
-            </select>
-           
-        </break>
-        
-        <br><font size="6"> <p style="font-family:'Lucida Console'"><br>What interest you?</b></p> </font>
-
-        <break>
-            
-            <select>
+              <option value="audi">Counseling</option>
+              <option value="opel">Survival Skills</option>
+              <option value="audi">CPR</option>
+            </select></div>
+            </td>
+          </tr>
+    </div>
+  
+    <div class="box2">
+      <div style="position:relative; left:130px; top:80px;"><p>What Intrests<br/>You?</p></div>
+       <tr>
+            <td>
+ <div style="position:relative; left:675px; top:-50px;"> <select>
               <option value="volvo">(Please choose one)</option>
-              <option value="volvo"></option>
-              <option value="saab"></option>
-              <option value="opel"></option>
-              <option value="audi"></option>
-            </select>
-            
-        </break>
-        
+              <option value="volvo">Tornadoes and Severe Storms</option>
+              <option value="saab">Hurricanes and Tropical Storms</option>
+              <option value="opel">Floods</option>
+              <option value="audi">Wildfires</option>
+              <option value="opel">Earthquakes</option>
+              <option value="audi">Drought</option>
+            </select></div>
+            </td>
+          </tr>
+    </div>
 
-        <br><font size="6"> <p style="font-family:'Lucida Console'">What location would you like to work in?</p> </font></b>
-
-        <break>
-            
-            <select>
+      <div class="box3">
+      <div style="position:relative; left:130px; top:60px;"><p>What Location<br>Would You Like<br>To Work In?</p></div>
+       <tr>
+            <td>
+  <div style="position:relative; left:700px; top:-120px;"><select>
               <option value="volvo">(Please choose one)</option>
               <option value="volvo">North America</option>
               <option value="saab">South America</option>
@@ -180,16 +203,12 @@
               <option value="saab">Europe</option>
               <option value="opel">Australia</option>
               <option value="audi">Antarctica</option>
-            </select>
-        <h4><br></br></h4>  
-        </break>
-        
-        
-
-        <button class="button" style="vertical-align:middle"><span> Lets go! </span></button>
-        <h4><br></br></h4>
-  </div>
-
+            </select></div>
+            </td>
+          </tr>
+    </div>
+      <br>
+    <center><a href="/#"><button class="button"><span>Lets Go!</span></button></a>
  </section> 
         
     </body>
